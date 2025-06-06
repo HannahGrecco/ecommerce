@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "./ViewComponents/Navbar";
 import ProductsCards from "./ProductsCards";
 import CartIcon from "./CartIcon";
 function ProductView() {
@@ -20,10 +20,10 @@ function ProductView() {
             <p className="mb-4 text-gray-600">
               Easiest way to healthy life by buying your favorite plants
             </p>
-            <button className="bg-blue-300 p-3 rounded-2xl">See More</button>
+            <button className="transition-transform duration-300 ease-in-out hover:scale-110 bg-blue-300 p-3 rounded-2xl">See More</button>
           </div>
 
-          <div className="md:w-1/2">
+          <div id="product" className="md:w-1/2">
             <ProductsCards />
           </div>
         </div>
